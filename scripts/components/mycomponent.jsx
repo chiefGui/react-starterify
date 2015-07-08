@@ -1,7 +1,7 @@
 import React from 'react';
 import packageJSON from '../../package.json';
 
-class Mycomponent extends React.Component {
+export default class Mycomponent extends React.Component {
   returnSomething(something) {
     return something;
   };
@@ -25,5 +25,3 @@ class Mycomponent extends React.Component {
     );
   }
 }
-
-export default Mycomponent;
