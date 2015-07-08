@@ -1,10 +1,11 @@
 import React from 'react';
 import packageJSON from '../../package.json';
 
-let Mycomponent = React.createClass({
+class Mycomponent extends React.Component {
   returnSomething(something) {
     return something;
-  },
+  };
+
   render() {
     let version = packageJSON.version,
         deps, devDeps;
@@ -23,6 +24,6 @@ let Mycomponent = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default Mycomponent;
